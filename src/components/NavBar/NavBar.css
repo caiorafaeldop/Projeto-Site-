@@ -1,0 +1,33 @@
+/* NavBar.css */
+.appBar {
+  /* Coloque a AppBar no topo da página */
+  position: "fixed";
+  top: 0;
+  left: 0;
+  right: 0;
+
+  /* Dê à AppBar uma sombra sutil para se destacar do conteúdo abaixo */
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* Estilos para ajustar o espaçamento e a formatação dos itens do menu */
+.menuButton {
+  margin-right: 16px;
+}
+
+.title {
+  flex-grow: 1;
+  text-decoration: none;
+}
+
+/* Ajustar o posicionamento do logo e itens do menu no modo mobile */
+@media (max-width: 600px) {
+  .title {
+    display: none; /* Ocultar o título no modo mobile */
+  }
+
+  .menuButton {
+    margin-right: 0;
+  }
+}
